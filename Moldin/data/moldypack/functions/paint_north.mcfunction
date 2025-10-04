@@ -1,0 +1,1 @@
+$execute align zxy run summon text_display ~ ~ ~0.9999  {text_opacity:0,Tags:["FrucsPaint"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[1f,1f,0f,0f],translation:[0f,0f,0f],scale:[20f,20f,20f]},background:$(color)}

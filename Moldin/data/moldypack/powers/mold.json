@@ -1,0 +1,69 @@
+{
+"name":"Mold Power",
+"description": "You Spread Mold Around",
+"type":"origins:multiple",
+"overtime":{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:selector_action",
+                "selector": "@e[tag=FrucsMoldEdge,distance=..32,limit=1,sort=nearest]",
+                "bientity_action": {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "function moldypack:moldspread"
+                    }
+                }
+            },
+            {
+                "type": "origins:selector_action",
+                "selector": "@e[tag=FrucsMoldEdge,distance=..32,limit=1,sort=random]",
+                "bientity_action": {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "function moldypack:moldspread"
+                    }
+                }
+            },
+            {
+                "type": "origins:selector_action",
+                "selector": "@e[tag=FrucsMoldGrowth,distance=..32,limit=10,sort=random]",
+                "bientity_action": {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "function moldypack:moldpaint"
+                    }
+                }
+            },
+            {
+                "type": "origins:selector_action",
+                "selector": "@e[tag=FrucsMoldGrowth,distance=..32,limit=1,sort=nearest]",
+                "bientity_action": {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "function moldypack:moldpaint"
+                    }
+                }
+            },
+            {
+                "type": "origins:selector_action",
+                "selector": "@e[tag=FrucsMold,distance=32..,limit=3,sort=furthest]",
+                "bientity_action": {
+                    "type": "origins:target_action",
+                    "action": {
+                        "type": "origins:execute_command",
+                        "command": "function moldypack:moldremove"
+                    }
+                }
+            }
+        ]
+    },
+    "interval": 1
+}
+}
