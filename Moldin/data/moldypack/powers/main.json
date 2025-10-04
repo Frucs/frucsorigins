@@ -1,0 +1,444 @@
+{
+"name":"Paint Power",
+"description": "You passively power nearby Redstone",
+"type":"origins:multiple",
+"callback":{
+    "type": "origins:action_on_callback",
+    "entity_action_gained": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "scoreboard objectives add frucsmath dummy"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "scoreboard objectives add FrucsMold dummy"
+            }
+        ]
+    },
+    "execute_chosen_when_orb": true
+},
+"paint":{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:if_else_list",
+                "actions": [
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:potion"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "data modify storage frucspainter color set value 16777215"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:white_dye"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "data modify storage frucspainter color set value 452591614"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:light_gray_dye"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "data modify storage frucspainter color set value 446537111"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:gray_dye"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "data modify storage frucspainter color set value 440880978"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:black_dye"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "data modify storage frucspainter color set value 438115617"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:brown_dye"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "data modify storage frucspainter color set value 444814386"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:red_dye"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "data modify storage frucspainter color set value 447753766"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:orange_dye"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "data modify storage frucspainter color set value 452558877"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:yellow_dye"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "data modify storage frucspainter color set value 452909117"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:lime_dye"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "data modify storage frucspainter color set value 444647199"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:green_dye"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "data modify storage frucspainter color set value 442399766"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:cyan_dye"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "data modify storage frucspainter color set value 437689500"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:light_blue_dye"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "data modify storage frucspainter color set value 440054746"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:blue_dye"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "data modify storage frucspainter color set value 440157354"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:purple_dye"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "data modify storage frucspainter color set value 445199032"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:magenta_dye"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "data modify storage frucspainter color set value 449269437"
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:equipped_item",
+                            "equipment_slot": "offhand",
+                            "item_condition": {
+                                "type": "origins:ingredient",
+                                "ingredient": {
+                                    "item": "minecraft:pink_dye"
+                                }
+                            }
+                        },
+                        "action": {
+                            "type": "origins:execute_command",
+                            "command": "data modify storage frucspainter color set value 452168618"
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "offhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:potion"
+                        }
+                    }
+                },
+                "if_action": {
+                    "type": "origins:raycast",
+                    "distance": 6,
+                    "block": true,
+                    "entity": true,
+                    "shape_type": "visual",
+                    "fluid_handling": "none",
+                    "block_action": {
+                        "type": "origins:delay",
+                        "ticks": 1,
+                        "action": {
+                            "type": "origins:offset",
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "function moldypack:water"
+                            },
+                            "y": -0.5
+                        }
+                    },
+                    "command_step": 1
+                },
+                "else_action": {
+                    "type": "origins:raycast",
+                    "distance": 6,
+                    "block": true,
+                    "entity": true,
+                    "shape_type": "visual",
+                    "fluid_handling": "none",
+                    "block_action": {
+                        "type": "origins:delay",
+                        "ticks": 1,
+                        "action": {
+                            "type": "origins:offset",
+                            "action": {
+                                "type": "origins:execute_command",
+                                "command": "function moldypack:ispaint"
+                            },
+                            "y": -0.5
+                        }
+                    },
+                    "command_step": 1
+                }
+            }
+        ]
+    },
+    "cooldown": 1,
+    "key": {
+        "key": "key.use",
+        "continuous": true
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "offhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": [
+                        {
+                            "item": "minecraft:potion"
+                        },
+                        {
+                            "item": "minecraft:white_dye"
+                        },
+                        {
+                            "item": "minecraft:light_gray_dye"
+                        },
+                        {
+                            "item": "minecraft:gray_dye"
+                        },
+                        {
+                            "item": "minecraft:black_dye"
+                        },
+                        {
+                            "item": "minecraft:brown_dye"
+                        },
+                        {
+                            "item": "minecraft:red_dye"
+                        },
+                        {
+                            "item": "minecraft:orange_dye"
+                        },
+                        {
+                            "item": "minecraft:yellow_dye"
+                        },
+                        {
+                            "item": "minecraft:lime_dye"
+                        },
+                        {
+                            "item": "minecraft:green_dye"
+                        },
+                        {
+                            "item": "minecraft:cyan_dye"
+                        },
+                        {
+                            "item": "minecraft:light_blue_dye"
+                        },
+                        {
+                            "item": "minecraft:blue_dye"
+                        },
+                        {
+                            "item": "minecraft:purple_dye"
+                        },
+                        {
+                            "item": "minecraft:magenta_dye"
+                        },
+                        {
+                            "item": "minecraft:pink_dye"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": [
+                        {
+                            "item": "minecraft:brush"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
+}

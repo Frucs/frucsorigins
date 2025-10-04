@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"moldypack:main",
+		"moldypack:mold"
+	],
+	"icon": {
+		"item": "minecraft:brush",
+		"tag": "{Enchantments:[{lvl:1s, id: \"minecraft:looting\"}]}"
+	},
+	"order": 1,
+	"impact": 1,
+	"name": "Mold",
+	"description": "Machinists are extra clever humans that specialize in buidling complex Redstone Circuitry."
+}
